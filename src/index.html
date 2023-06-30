@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../assets/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Architects+Daughter&family=Belanosima:wght@700&family=Geologica:wght@700&family=Montserrat:wght@700&family=Righteous&display=swap"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div id="render">
+                <div>
+                    <h1 id="txt-buscador">buscador de clima</h1>
+                    <p id="txt-agreagar">agrega la cuidad y el pais</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <form id="form">
+                <div id="cont-inputs">
+                    <select title="pais" id="input1">
+                        <option value="AR">Argentina</option>
+                        <option value="CO">Colonbia</option>
+                        <option value="CR">CostaRica</option>
+                        <option value="ES">España</option>
+                        <option value="US">Estados Unidos</option>
+                    </select>
+                    <input id="input2" type="text" placeholder="cuidad" />
+                </div>
+                <div id="cont-boton">
+                    <button type="submit">obtener clima</button>
+                </div>
+            </form>
+        </main>
+        <script src="../assets/main.js"></script>
+    </body>
+</html>

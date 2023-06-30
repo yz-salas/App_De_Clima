@@ -1,0 +1,158 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde-fumy: #e2ff65;
+    --azul-cielo: #5bc3eb;
+    --azul-oscuro: #122543;
+    --negro: #0b1629;
+    --gris: #dfe3ee;
+    --alert: #eb1636;
+}
+
+body {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Geologica", sans-serif;
+    color: var(--azul-cielo);
+    background: var(--negro);
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6em;
+}
+
+header #render {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    text-align: center;
+}
+
+header #txt-buscador {
+    font-size: 2.5em;
+    color: var();
+}
+
+header #txt-agreagar {
+    font-size: 1.5em;
+}
+
+header h1 {
+    color: var(--verde-fumy);
+}
+
+header #grados{
+    font-size: 4em;
+}
+
+/*
+ ! main
+*/
+
+main {
+    width: 100%;
+    height: 65vh;
+}
+
+main form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
+main #cont-inputs {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+}
+
+main input {
+    display: flex;
+    border-radius: 15px;
+    padding: 2em;
+    height: 4em;
+    width: 50em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Geologica", sans-serif;
+    background: var(--azul-oscuro);
+    box-shadow: 0;
+    color: var(--verde-fumy);
+    outline: none;
+    transition: 0.4s;
+    border: 0;
+}
+
+main input:focus {
+    transition: 0.4s;
+    box-shadow: 0 0 10px var(--verde-fumy);
+}
+
+main #input1 {
+    font-family: "Geologica", sans-serif;
+    height: 4em;
+    width: 50em;
+    border-radius: 15px;
+    background: var(--azul-oscuro);
+    color: var(--verde-fumy);
+    padding: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    transition: 0.4s;
+}
+
+main #input1:focus {
+    transition: 0.4s;
+    box-shadow: 0 0 10px var(--verde-fumy);
+}
+
+main #cont-boton {
+    display: flex;
+    justify-content: center;
+    height: 15em;
+    align-items: center;
+    width: 100%;
+}
+
+main button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    width: 13em;
+    height: 4em;
+    border-radius: 15px;
+    background: var(--azul-cielo);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Geologica", sans-serif;
+    transition: 0.3s;
+}
+
+main button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+main #mensage {
+    color: var(--alert);
+}
